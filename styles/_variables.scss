@@ -1,0 +1,29 @@
+/* color values */
+$primary-color: #181818;
+$secondary-color: #1e1e1e;
+$third-color: #000000;
+$fourth-color: #08fdd8;
+/* font weights */
+$regular: 400;
+$semi-bold: 600;
+$bold: 700;
+
+/* font sizes */
+$small: 0.87rem;
+$medium: 1.12rem;
+$large: 1.25rem;
+$x-large: 1.5rem;
+$xx-large: 2rem;
+
+$color-transparent: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+  rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+$color-transparent-100: rgb(255, 255, 255);
+
+//breakpoints
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);

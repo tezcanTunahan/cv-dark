@@ -1,0 +1,9 @@
+.home {
+  @include flex(row, flex-start, center);
+  &__navbar {
+    flex-basis: 10%;
+  }
+  &__page {
+    flex-basis: 90%;
+  }
+}

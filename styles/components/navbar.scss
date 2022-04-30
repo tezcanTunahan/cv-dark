@@ -1,0 +1,39 @@
+.navbar {
+  @include flex(column, center, center);
+  height: 100vh;
+  background-color: $secondary-color;
+
+  &__top {
+    @include flex(column, center, center);
+    flex-basis: 25%;
+    width: 100%;
+    background-color: $third-color;
+  }
+  &__mid {
+    @include flex(column, center, center);
+    flex-basis: 50%;
+    width: 100%;
+    &__nav {
+      @include flex(column, center, center);
+      width: 100%;
+      a {
+        @include flex(column, center, center);
+        width: 100%;
+        cursor: pointer;
+        padding: 1rem 0rem;
+        border-top: 1px solid rgb(50, 50, 50);
+      }
+      :hover {
+        color: $fourth-color;
+      }
+    }
+    &__nav :last-child {
+      border-bottom: 1px solid rgb(50, 50, 50);
+    }
+  }
+  &__bot {
+    @include flex(column, center, center);
+    flex-basis: 25%;
+    width: 100%;
+  }
+}

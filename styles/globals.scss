@@ -1,9 +1,18 @@
+@import './mixins.scss';
+@import './variables.scss';
+//page
+@import './pages/index.scss';
+//componnet
+@import './components/navbar.scss';
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: $primary-color;
+  color: white;
 }
 
 a {
@@ -13,4 +22,6 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
