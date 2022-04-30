@@ -1,6 +1,7 @@
 import Container from '../components/Container';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Welcome from '../components/Welcome';
 export default function Home() {
   return (
     <Container>
@@ -10,7 +11,7 @@ export default function Home() {
         </div>
         <div className='home__page'>
           <main>
-            <h1>welcome page</h1>
+            <Welcome />
           </main>
           <Footer />
         </div>

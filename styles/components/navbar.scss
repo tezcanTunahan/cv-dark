@@ -25,6 +25,7 @@
       }
       :hover {
         color: $fourth-color;
+        transition: color 0.3s;
       }
     }
     &__nav :last-child {
@@ -32,8 +33,16 @@
     }
   }
   &__bot {
-    @include flex(column, center, center);
+    @include flex(row, space-evenly, center);
     flex-basis: 25%;
     width: 100%;
+    * {
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+    :hover {
+      color: $fourth-color;
+      transition: color 0.3s;
+    }
   }
 }
