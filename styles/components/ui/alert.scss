@@ -1,0 +1,26 @@
+.alert {
+  @include flex(row, space-between, center);
+  position: fixed;
+  z-index: 9999;
+  bottom: 3rem;
+  right: 4rem;
+  width: 25%;
+  height: 50px;
+  background-color: rgb(2, 148, 117);
+  &__left {
+    padding-left: 1rem;
+  }
+  &__right {
+    button {
+      border: none;
+      color: black;
+      font-weight: 600;
+    }
+    button:hover {
+      background-color: white;
+    }
+  }
+}
+.hide {
+  display: none;
+}

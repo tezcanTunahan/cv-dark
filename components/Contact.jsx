@@ -1,11 +1,14 @@
 import emailjs from '@emailjs/browser';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
+import Alert from './ui/Alert';
 import Button from './ui/Button';
 import Input from './ui/Input';
 import TextInput from './ui/TextInput';
 
 export default function Contact() {
   const form = useRef();
+  const [hide, setHide] = useState(true);
+  const [message, setMessage] = useState('');
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -19,9 +22,20 @@ export default function Contact() {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          form.current[0].value = '';
+          form.current[1].value = '';
+          form.current[2].value = '';
+          form.current[3].value = '';
+          setMessage('form submit successfully');
+          setHide(false);
         },
         (error) => {
+          form.current[0].value = '';
+          form.current[1].value = '';
+          form.current[2].value = '';
+          form.current[3].value = '';
+          setMessage('form submit failed');
+          setHide(false);
           console.log(error.text);
         }
       );
@@ -37,21 +51,41 @@ export default function Contact() {
           feel free to use the form.
         </p>
         <div className='contact__left__doubleInput'>
-          <Input placeholder='Name' id='name' name='name' type='text' />
-          <Input id='email' type='email' name='email' placeholder='Email' />
+          <Input
+            placeholder='Name'
+            id='name'
+            name='name'
+            type='text'
+            required={true}
+          />
+          <Input
+            id='email'
+            type='email'
+            name='email'
+            placeholder='Email'
+            required={true}
+          />
         </div>
-        <Input id='subject' name='subject' placeholder='Subject' type='text' />
+        <Input
+          id='subject'
+          name='subject'
+          placeholder='Subject'
+          type='text'
+          required={true}
+        />
         <TextInput
           id='message'
           name='message'
           placeholder='Message'
           type='text'
+          required={true}
         />
         <Button
           type='submit'
           text='Send message !'
           style={{ marginTop: '2rem' }}
         />
+        <Alert message={message} hide={hide} setHide={setHide} />
       </div>
     </form>
   );

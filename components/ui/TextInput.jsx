@@ -7,6 +7,7 @@ export default function TextInput({
   labelText,
   style,
   showContent,
+  required,
   ...rest
 }) {
   return (
@@ -17,6 +18,7 @@ export default function TextInput({
       type={type}
       id={name}
       name={name}
+      required={required}
       {...rest}
     ></textarea>
   );

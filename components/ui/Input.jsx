@@ -5,6 +5,7 @@ export default function Input({
   labelText,
   style,
   showContent,
+  required,
   ...rest
 }) {
   return (
@@ -14,6 +15,7 @@ export default function Input({
       type={type}
       id={name}
       name={name}
+      required={required}
       {...rest}
     />
   );
