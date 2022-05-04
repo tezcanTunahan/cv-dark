@@ -6,7 +6,7 @@ export default function FlipCard({ title, text, img, link }) {
       <div className='flip-card'>
         <div className='flip-card-inner'>
           <div className='flip-card-front'>
-            <Image src={img} />
+            <Image src={img} alt='projeImg' />
           </div>
           <div className='flip-card-back'>
             <h3>{title}</h3>
