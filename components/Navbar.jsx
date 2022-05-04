@@ -28,7 +28,9 @@ export default function Navbar() {
         <a href='https://github.com/tezcanTunahan'>
           <FontAwesomeIcon icon={faGithub} />
         </a>
-        <FontAwesomeIcon icon={faInstagram} />
+        <a href='https://www.instagram.com/tunahantezcaan/'>
+          <FontAwesomeIcon icon={faInstagram} />
+        </a>
       </div>
     </div>
   );
