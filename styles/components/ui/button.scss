@@ -10,3 +10,10 @@
   background-color: $fourth-color;
   transition: all 0.3s 0.3s ease-in-out;
 }
+
+@include respond-to(sm) {
+  .button {
+    border: 0.8px solid $fourth-color;
+    padding: 0.8rem 3rem;
+  }
+}

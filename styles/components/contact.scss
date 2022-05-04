@@ -29,3 +29,16 @@
     }
   }
 }
+@include respond-to(sm) {
+  .contact {
+    &__left {
+      h1 {
+        @include font-size(2.5rem);
+      }
+      p {
+        margin: 2rem 0;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

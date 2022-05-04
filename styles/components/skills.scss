@@ -28,3 +28,26 @@
     margin-left: 0;
   }
 }
+@include respond-to(sm) {
+  .skills {
+    margin-right: 1rem;
+    &__right {
+      h1 {
+        @include font-size(2.5rem);
+      }
+      p {
+        padding: 0.5rem 0;
+        font-size: 0.8rem;
+      }
+    }
+    &__left {
+      h1 {
+        @include font-size(2.5rem);
+      }
+      p {
+        padding: 0.5rem 0;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

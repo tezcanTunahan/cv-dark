@@ -13,3 +13,10 @@
   border-bottom: 1px solid $fourth-color;
   transition: all 3s 0.3s ease-out;
 }
+@include respond-to(sm) {
+  .textInput {
+    margin: 0.4rem 0;
+    padding: 0.8rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
