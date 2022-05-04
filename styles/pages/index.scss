@@ -1,7 +1,10 @@
 .home {
-  @include flex(row, flex-start, center);
+  @include flex(row, flex-start, flex-start);
   &__navbar {
     flex-basis: 10%;
+    position: sticky;
+    top: 0;
+    left: 0;
   }
   &__page {
     flex-basis: 90%;

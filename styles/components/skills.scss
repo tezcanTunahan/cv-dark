@@ -1,0 +1,28 @@
+.skills {
+  height: 100vh;
+  @include flex(row, flex-start, center);
+  margin-left: 5rem;
+  &__right {
+    padding-right: 5rem;
+    flex-basis: 50%;
+    h1 {
+      color: $fourth-color;
+      font-size: 3rem;
+    }
+    p {
+      padding: 1rem 0;
+    }
+  }
+  &__left {
+    flex-basis: 50%;
+    padding-right: 5rem;
+    flex-basis: 50%;
+    h1 {
+      color: $fourth-color;
+      font-size: 3rem;
+    }
+    p {
+      padding: 0.5rem 0;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.input {
+  margin: 0.5rem 0;
+  padding: 1rem 1rem;
+  width: 100%;
+  background-color: rgb(47, 46, 46);
+  color: rgb(198, 191, 191);
+  font-size: 1rem;
+  border: none;
+}
+.input:focus {
+  color: $fourth-color;
+  outline: none;
+  border-bottom: 1px solid $fourth-color;
+  transition: all 3s 0.3s ease-out;
+}

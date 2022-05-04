@@ -1,0 +1,23 @@
+.contact {
+  height: 100vh;
+  @include flex(row, flex-start, center);
+  margin-left: 5rem;
+  &__left {
+    flex-basis: 50%;
+    @include flex(column, center, flex-start);
+    h1 {
+      color: $fourth-color;
+      font-size: 3rem;
+    }
+    p {
+      margin: 2rem 0;
+    }
+    &__doubleInput {
+      width: 100%;
+      @include flex(row, space-between, center);
+      * {
+        flex-basis: 47%;
+      }
+    }
+  }
+}

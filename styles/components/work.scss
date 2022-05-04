@@ -1,0 +1,12 @@
+.work {
+  margin-left: 5rem;
+  h1 {
+    color: $fourth-color;
+    font-size: 3rem;
+  }
+  &__projects {
+    margin-top: 3rem;
+    @include flex(row, flex-start, center);
+    flex-wrap: wrap;
+  }
+}
