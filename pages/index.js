@@ -6,7 +6,7 @@ import Skills from '../components/Skills';
 import Contact from '../components/Contact';
 import { useState } from 'react';
 export default function Home() {
-  const [hide, setHide] = useState(false);
+  const [hide, setHide] = useState(true);
 
   function clikHandle() {
     setHide(!hide);
