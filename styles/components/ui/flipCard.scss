@@ -3,8 +3,8 @@
   cursor: pointer;
   margin: 0.5rem;
   background-color: transparent;
-  width: 250px;
-  height: 300px;
+  width: 208px;
+  height: 250px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -64,5 +64,11 @@
   .flip-card {
     width: 187px;
     height: 225px;
+  }
+}
+@include respond-to(sm) {
+  .flip-card {
+    width: 125px;
+    height: 150px;
   }
 }
