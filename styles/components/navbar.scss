@@ -47,8 +47,11 @@
   }
 }
 
+.hide {
+  display: flex;
+}
 @include respond-to(lg) {
-  .navbar {
+  .navbar--hide {
     display: none;
   }
 }

@@ -5,6 +5,9 @@
     position: sticky;
     top: 0;
     left: 0;
+    &__button {
+      display: none;
+    }
   }
   &__page {
     margin-left: 5rem;
@@ -15,12 +18,43 @@
 
 @include respond-to(lg) {
   .home {
-    margin-left: 1rem;
+    flex-wrap: wrap;
     &__navbar {
-      display: none;
+      flex-basis: 100%;
+      position: sticky;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      &__button {
+        @include flex(row, center, center);
+        background-color: rgba(0, 0, 0, 0.686);
+        padding: 0.3rem 1rem;
+        cursor: pointer;
+        display: flex;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        span {
+          height: 20px;
+          width: 1px;
+          background-color: $fourth-color;
+          margin: 5px;
+        }
+      }
+      &__button:hover {
+        background-color: rgb(73, 71, 71);
+      }
     }
     &__page {
       flex-basis: 100%;
+      margin-left: 2rem;
+    }
+  }
+}
+@include respond-to(md) {
+  .home {
+    &__page {
+      margin-left: 1rem;
     }
   }
 }
