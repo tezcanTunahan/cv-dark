@@ -59,3 +59,10 @@
     padding: 0.5rem;
   }
 }
+
+@include respond-to(lg) {
+  .flip-card {
+    width: 187px;
+    height: 225px;
+  }
+}

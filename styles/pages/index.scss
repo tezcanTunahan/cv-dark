@@ -7,6 +7,20 @@
     left: 0;
   }
   &__page {
+    margin-left: 5rem;
+
     flex-basis: 90%;
+  }
+}
+
+@include respond-to(lg) {
+  .home {
+    margin-left: 1rem;
+    &__navbar {
+      display: none;
+    }
+    &__page {
+      flex-basis: 100%;
+    }
   }
 }

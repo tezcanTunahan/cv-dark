@@ -46,3 +46,9 @@
     }
   }
 }
+
+@include respond-to(lg) {
+  .navbar {
+    display: none;
+  }
+}

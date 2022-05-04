@@ -29,9 +29,9 @@
 @mixin font-size($font-size) {
   font-size: $font-size;
   @include respond-to(md) {
-    font-size: calc($font-size - 0.1rem);
+    font-size: calc($font-size - 0.5rem);
   }
   @include respond-to(sm) {
-    font-size: calc($font-size - 0.25rem);
+    font-size: calc($font-size - 1rem);
   }
 }
