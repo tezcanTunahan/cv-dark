@@ -14,10 +14,10 @@ export default function Navbar() {
       </div>
       <div className='navbar__mid'>
         <nav className='navbar__mid__nav'>
-          <a>About</a>
-          <a>Work</a>
-          <a>My skills</a>
-          <a>Contact</a>
+          <a href='#about'>About</a>
+          <a href='#work'>Work</a>
+          <a href='#mySkills'>My skills</a>
+          <a href='#contact'>Contact</a>
           <a>Blog</a>
         </nav>
       </div>

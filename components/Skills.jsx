@@ -1,6 +1,6 @@
 export default function Skills() {
   return (
-    <div className='skills'>
+    <section id='mySkills' className='skills'>
       <div className='skills__right'>
         <h1>Skills & </h1>
         <h1>Experiance</h1>
@@ -22,6 +22,6 @@ export default function Skills() {
         <p>React(.js) - a client-side JavaScript framework</p>
         <p>Node(.js) - the premier JavaScript web server </p>
       </div>
-    </div>
+    </section>
   );
 }

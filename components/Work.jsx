@@ -7,7 +7,7 @@ import todo from '../public/img/todo.png';
 
 export default function Work() {
   return (
-    <div className='work'>
+    <section id='work' className='work'>
       <h1>My Projects</h1>
       <div className='work__projects'>
         <FlipCard
@@ -41,6 +41,6 @@ export default function Work() {
           link='https://todowithtimer.netlify.app/'
         />
       </div>
-    </div>
+    </section>
   );
 }
