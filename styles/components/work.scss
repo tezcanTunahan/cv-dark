@@ -15,5 +15,16 @@
 @include respond-to(lg) {
   .work {
     margin-left: 0;
+    &__projects {
+      margin-top: 3rem;
+    }
+  }
+}
+@include respond-to(sm) {
+  .work {
+    margin-left: 0;
+    &__projects {
+      margin-top: 2rem;
+    }
   }
 }
