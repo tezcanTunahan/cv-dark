@@ -37,15 +37,16 @@
   .alert {
     bottom: 2rem;
     right: 3rem;
-    width: 40%;
+    width: 50%;
     &__left {
       padding-left: 0.3rem;
+      flex-basis: 65%;
     }
     &__right {
+      flex-basis: 35%;
       button {
-        width: 50%;
-        height: 100%;
-        font-weight: 400;
+        width: 100%;
+        font-weight: 300;
       }
     }
   }
