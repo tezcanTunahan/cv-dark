@@ -1,11 +1,12 @@
 .work {
-  margin-top: 5rem;
+  @include flex(column, center, flex-start);
+  min-height: 100vh;
   h1 {
     color: $fourth-color;
     @include font-size(3rem);
   }
   &__projects {
-    margin-top: 3rem;
+    margin-top: 5rem;
     @include flex(row, flex-start, center);
     flex-wrap: wrap;
   }
