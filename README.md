@@ -1,3 +1,7 @@
+live demo : https://tunahantezcan.vercel.app/
+
+![Screenshot (158)](https://user-images.githubusercontent.com/84778158/167019096-9e8e1b02-cca4-4124-ac32-30326eb9566a.png)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
