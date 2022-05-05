@@ -32,3 +32,21 @@
 .hide {
   display: none;
 }
+
+@include respond-to(sm) {
+  .alert {
+    bottom: 2rem;
+    right: 3rem;
+    width: 40%;
+    &__left {
+      padding-left: 0.3rem;
+    }
+    &__right {
+      button {
+        width: 50%;
+        height: 100%;
+        font-weight: 400;
+      }
+    }
+  }
+}
