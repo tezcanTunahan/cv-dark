@@ -6,18 +6,26 @@
   right: 4rem;
   width: 25%;
   height: 50px;
-  background-color: rgb(2, 148, 117);
   &__left {
     padding-left: 1rem;
+    flex-basis: 50%;
   }
   &__right {
+    @include flex(row, flex-end, center);
+    flex-basis: 50%;
+    height: 100%;
     button {
+      background-color: rgb(39, 39, 39);
+      cursor: pointer;
+      width: 80%;
+      height: 100%;
       border: none;
       color: black;
       font-weight: 600;
+      color: white;
     }
     button:hover {
-      background-color: white;
+      border: 1px solid $fourth-color;
     }
   }
 }

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 
 export default function Alert({ message, hide, setHide }) {
   function clickHandle() {
@@ -8,7 +7,10 @@ export default function Alert({ message, hide, setHide }) {
   return (
     <div
       className={`alert ${hide && 'hide'}`}
-      style={{ background: message === 'form submit failed' && 'red' }}
+      style={{
+        backgroundColor:
+          message === 'form submit failed' ? 'red' : 'rgb(2, 148, 117)',
+      }}
     >
       <div className='alert__left'>
         <p>{message}</p>
